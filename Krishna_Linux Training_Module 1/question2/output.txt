@@ -1,0 +1,16 @@
+#Code
+
+touch file1
+chmod g+w file1
+ls -l
+chmod g-w file1
+ls -l
+(cat q2.sh; ls -l) > output.txt
+
+
+#Output
+
+total 0
+-rw-r--r-- 1 krish krish   0 Jan 22 23:11 file1
+-rw-r--r-- 1 krish krish 106 Jan 22 23:11 output.txt
+-rwxr-xr-x 1 krish krish 106 Jan 22 23:10 q2.sh

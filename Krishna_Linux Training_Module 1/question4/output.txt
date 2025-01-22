@@ -1,0 +1,15 @@
+#Commands
+
+ps aux
+(cat q4.sh; ps aux) > output.txt
+
+#Output
+
+
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   9588   968 ?        Ssl  22:54   0:01 /init
+root        15  0.0  0.0   9328   252 tty1     Ss   22:55   0:00 /init
+krish       16  0.0  0.0  14364  4148 tty1     S    22:55   0:01 -bash
+krish      332  0.0  0.0  14364  1996 tty1     S    23:24   0:00 -bash
+krish      334  0.0  0.0  14364  1064 tty1     S    23:24   0:00 -bash
+krish      336  0.0  0.0  15524  1928 tty1     R    23:24   0:00 ps aux

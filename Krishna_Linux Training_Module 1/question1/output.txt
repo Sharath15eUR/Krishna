@@ -1,0 +1,13 @@
+#Commands
+
+touch file1
+chmod a+x file1
+(cat q1.sh; ls -l) > output.txt
+
+
+#Output
+
+total 0
+-rwxr-xr-x 1 krish krish  0 Jan 22 23:12 file1
+-rw-r--r-- 1 krish krish 82 Jan 22 23:12 output.txt
+-rwxr-xr-x 1 krish krish 82 Jan 22 23:12 q1.sh
