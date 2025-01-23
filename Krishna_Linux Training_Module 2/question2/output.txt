@@ -1,0 +1,16 @@
+#Question2: Replace all occurrences of "localhost" with "127.0.0.1" in config.txt and save as updated_config.txt
+
+#Commands
+
+(cat q2.sh; cat config.txt; sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt; cat updated_config.txt) > output.txt
+
+
+#Output
+server=localhost
+db=localhost://mongodb.com
+api=http://localhost:8080/login
+yes=localhost==localhost
+server=127.0.0.1
+db=127.0.0.1://mongodb.com
+api=http://127.0.0.1:8080/login
+yes=127.0.0.1==127.0.0.1

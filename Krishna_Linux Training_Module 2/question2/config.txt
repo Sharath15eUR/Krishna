@@ -1,0 +1,4 @@
+server=localhost
+db=localhost://mongodb.com
+api=http://localhost:8080/login
+yes=localhost==localhost
