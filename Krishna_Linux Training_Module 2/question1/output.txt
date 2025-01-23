@@ -1,0 +1,9 @@
+#Question: List all files larger than 1MB in the current directory and save the output to a file
+
+#Command
+(cat q1.sh; find . -type f -size +1M -exec ls -lh {} +) > output.txt
+
+#Output
+-rw-r--r-- 1 krish krish 5.0M Jan 23 21:14 ./file1.txt
+-rw-r--r-- 1 krish krish 2.0M Jan 23 21:15 ./file3.txt
+-rw-r--r-- 1 krish krish 3.0M Jan 23 21:15 ./file4.txt

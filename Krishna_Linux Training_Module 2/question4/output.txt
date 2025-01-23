@@ -1,0 +1,31 @@
+#Question4: Write a code to identify the process with the highest memory usage and then terminate it
+
+#Commands
+
+(cat q4.sh; ps aux; ps aux | sort -nrk 4 | head -1 | awk '{system("kill -9 " $2)}'; echo "After Kill"; ps aux) > output.txt
+
+
+#Output
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   8952   332 ?        Ssl  21:13   0:00 /init
+root        10  0.0  0.0   8960   240 tty1     Ss   21:13   0:00 /init
+krish       11  0.0  0.0  14484  4236 tty1     S    21:13   0:01 -bash
+root       312  1.2  0.0  16848  3700 tty1     S    22:05   0:00 sudo su
+root       313  0.0  0.0  16848   504 pts/0    Ss   22:05   0:00 sudo su
+root       314  0.4  0.0  15628  2572 pts/0    S    22:05   0:00 su
+root       315  0.1  0.0  13088  2656 pts/0    S    22:05   0:00 bash
+root       323  0.0  0.0  13088   920 pts/0    S    22:05   0:00 bash
+root       324  0.0  0.0  13088   712 pts/0    S    22:05   0:00 bash
+root       326  0.0  0.0  15524  1924 pts/0    R    22:05   0:00 ps aux
+After Kill
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   8952   332 ?        Ssl  21:13   0:00 /init
+root        10  0.0  0.0   8960   240 tty1     Ss   21:13   0:00 /init
+krish       11  0.0  0.0  14484  4236 tty1     S    21:13   0:01 -bash
+root       312  1.2  0.0  16848  3700 tty1     S    22:05   0:00 sudo su
+root       313  0.0  0.0  16848   504 pts/0    Ss   22:05   0:00 sudo su
+root       314  0.4  0.0  15628  2572 pts/0    S    22:05   0:00 su
+root       315  0.1  0.0  13088  2656 pts/0    S    22:05   0:00 bash
+root       323  0.0  0.0  13088   920 pts/0    S    22:05   0:00 bash
+root       324  0.0  0.0  13088   888 pts/0    S    22:05   0:00 bash
+root       332  0.0  0.0  15524  1924 pts/0    R    22:05   0:00 ps aux
