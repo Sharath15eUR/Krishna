@@ -23,7 +23,6 @@ if [[ ! -d "$backup_dir" ]]; then
 fi
 
 # Find all files with the specified extension in the source directory
-shopt -s nullglob  # Enable nullglob to handle no matches gracefully
 files=("$src_dir"/*"$file_ext")
 
 # Check if any matching files were found
