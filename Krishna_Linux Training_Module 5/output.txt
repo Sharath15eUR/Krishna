@@ -1,0 +1,12 @@
+Usage: file_analyzer.sh [OPTIONS]
+
+Options:
+  -d, --directory <dir>    Directory to search recursively
+  -f, --file <file>        Specific file to search
+  -k, --keyword <keyword>  Keyword to search for (required)
+  --help                   Show this help menu
+
+Examples:
+  file_analyzer.sh -d logs -k error
+  file_analyzer.sh -f script.sh -k TODO
+Found in file: script.sh
