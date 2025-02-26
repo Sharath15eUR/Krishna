@@ -1,0 +1,87 @@
+Networking Training Program
+Module 1 and 2 Assignment
+
+Krishna M
+Mepco Schlenk Engineering College, Sivakasi
+
+
+1.	Consider a case, a folder has multiple files and how would copy it to destination machine path (Try using SCP, cp options in Linux)
+
+cp -rv Linux_Training/ ./copysamp
+scp -rv Linux_Training/ 21bcs165@172.16.16.200/copysamp
+
+ 
+
+2.	Host a FTP and SFTP server and try PUT and GET operations.
+
+FTP:
+sudo systemctl start vsftpd
+ftp 21bcs165@172.16.16.200
+put file1.txt
+get file1.txt
+
+SFTP:
+sudo systemctl start ssh
+sftp 21bcs165@172.16.16.200
+put file1.txt
+get file1.txt
+
+3.	Explore with Wireshark/TCP-dump/cisco packet tracer tools and learn about packets filters.
+
+ 
+tcpdump -i eth0 port 80 
+
+4.	Understand linux utility commands like - ping, arp (Understand each params from ifconfig output)
+
+ping -c 5 8.8.8.8
+
+ 
+
+arp -a
+
+ 
+
+ifconfig
+ 
+
+5.	Understand what happens when duplicate IPs configured in a network.
+
+When two devices are assigned with the same IP, it will create an ambiguous situation while delivering packets. The ARP gets confused, and the packet will be delivered to the wrong machine unpredictably. It will create a huge problem in DHCP assignment too causing the network to disrupt.
+
+6.	Understand how to access remote system using (VNC viewer, Anydesk, teamviewer and remote desktop connections)
+
+Step 1: Install AnyDesk on both the devices that are to be connected remotely.
+Step 2: The AnyDesk address ie) unique code needs to be noted and entered in the host machine.
+Step 3: The Connection will be established.
+
+7.	How to check your default gateway is reachable or not and understand about default gateway.
+
+ip route show
+
+ 
+
+ping 172.16.16.1
+
+ 
+
+8.	Check iwconfig/ifconfig to understand in detail about network interfaces (check about interface speed, MTIJ and other parameters)
+
+ifconfig
+
+ 
+
+9.	Log in to your home router's web interface (usually at 192.168.1.1 or 192.168.0.1) and check the connected devices list.
+
+I have checked with Jio Modem.
+
+10.	Explain how a DHCP server assigns IP addresses to devices in your network.
+
+The DHCP server assigns IP addresses through the Process called DORA.
+•	DHCP Discover
+•	DHCP Offer
+•	DHCP Request
+•	DHCP Accept/Acknowledgement
+
+11.	Using a terminal, connect to a remote machine via SSH and telnet.
+
+ 
