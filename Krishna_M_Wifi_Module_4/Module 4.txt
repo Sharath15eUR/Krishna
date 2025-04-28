@@ -1,0 +1,33 @@
+Module 4 Assignment - WiFi
+By Krishna, Mepco Schlenk Engineering College.
+
+
+1. What is the significance of MAC layer and in which position it is placed in the OSI model?
+The MAC (Medium Access Control) layer is very important because it controls how devices share the communication channel and avoid conflicts. It makes sure data is sent and received properly between devices. In the OSI model, the MAC layer is part of the second layer, called the Data Link Layer. It mainly deals with addressing, channel access, and error checking.
+
+2. Describe the frame format of the 802.11 MAC header and explain the purpose of each field.
+The 802.11 MAC frame has three main parts: MAC Header, Frame Body, and Frame Check Sequence. The MAC Header contains fields like Frame Control, Duration, Address fields, Sequence Control, etc. Each field has a purpose like identifying the type of frame, telling how long the transmission will take, giving sender and receiver addresses, and helping arrange frames in order.
+
+3. Please list all the MAC layer functionalities in all Management, Control and Data plane.
+The MAC layer has different functions for Management, Control, and Data planes. In the Management plane, it handles scanning, authentication, association, and disassociation. In the Control plane, it manages RTS/CTS control frames to avoid collision and ensures frames are delivered properly. In the Data plane, it manages actual data delivery between devices.
+
+4. Explain the scanning process and its types in detail.
+Scanning is the process where a wireless device looks for available networks. There are two types: Passive Scanning and Active Scanning. In Passive Scanning, the device listens to beacons from access points. In Active Scanning, the device sends probe requests and waits for responses from access points. Scanning helps devices find and connect to networks.
+
+5. Brief about the client association process.
+The client association process is when a device connects to a wireless network. First, the device scans and selects a network. Then, it authenticates with the access point. After authentication, the device sends an association request, and if the access point accepts, it sends back an association response. Now, the device is officially connected to the network.
+
+6. Explain each step involved in EAPOL 4-way handshake and the purpose of each key derived from the process.
+The EAPOL 4-way handshake is used to set up secure communication between a client and access point. Step 1: AP sends an ANonce to the client. Step 2: Client generates SNonce and sends it with a MIC. Step 3: AP sends Group Temporal Key (GTK). Step 4: Client sends final confirmation. This handshake helps both sides prove they know the security keys without revealing them.
+
+7. Describe the power saving scheme in MAC layer and explore on the types of Power saving mechanisms.
+The MAC layer has power saving features to help devices use less battery. One common method is letting the device sleep and only wake up at certain times to receive data. There are two types of power saving: legacy power saving, where devices use Traffic Indication Maps (TIMs), and WMM-PS, which is used in modern networks for faster power saving.
+
+8. Describe the Medium Access Control methodologies.
+Medium Access Control (MAC) methods decide how multiple devices share the wireless medium without collisions. Some methods are Distributed Coordination Function (DCF) which uses CSMA/CA, and Point Coordination Function (PCF) which uses polling. These methods help ensure that data is sent smoothly even when many devices are connected to the network.
+
+9. Brief about the Block ACK mechanism and its advantages.
+The Block ACK mechanism is a way to improve the efficiency of acknowledging frames. Instead of sending an acknowledgment for every frame, the receiver can send one Block ACK that covers multiple frames. This reduces overhead and saves time, making communication faster, especially when sending large amounts of data.
+
+10. Explain about A-MSDU, A-MPDU and A-MSDU in A-MPDU.
+A-MSDU (Aggregated MAC Service Data Unit) combines multiple MSDUs into one MPDU. A-MPDU (Aggregated MAC Protocol Data Unit) combines multiple MPDUs into one transmission. A-MSDU inside A-MPDU means you can first group MSDUs together and then group those into MPDUs for sending. This improves network speed and reduces overhead.

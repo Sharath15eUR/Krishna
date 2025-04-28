@@ -1,0 +1,32 @@
+Module 6 Assignment - WiFi
+By Krishna, Mepco Schlenk Engineering College.
+
+1. What are the pillars of Wi-Fi security?
+The main pillars of Wi-Fi security are authentication, encryption, and integrity. Authentication ensures that only authorized users can access the network, encryption protects the data as it travels, and integrity checks make sure the data is not altered during transmission.
+
+2. Explain the difference between authentication and encryption in Wi-Fi security.
+Authentication is about verifying the identity of a device or user before allowing access to the network. Encryption, on the other hand, protects the data by scrambling it so that even if someone intercepts it, they cannot read it without the correct key.
+
+3. Explain the differences between WEP, WPA, WPA2, and WPA3.
+WEP was the first Wi-Fi security protocol but was weak and easily hacked. WPA improved security with TKIP encryption. WPA2 made things even stronger by using AES encryption. WPA3, the latest, adds even stronger protections like individualized data encryption and better protection against brute-force attacks.
+
+4. Why is WEP considered insecure compared to WPA2 or WPA3?
+WEP uses weak encryption keys that are easy to crack with simple tools. It also has flaws in how it manages keys, making it vulnerable to attacks. WPA2 and WPA3 fixed these problems with stronger encryption and better key management.
+
+5. Why was WPA2 introduced?
+WPA2 was introduced to replace WPA because WPA still had some security weaknesses. WPA2 introduced the stronger AES encryption standard, making wireless networks much more secure and reliable against modern attacks.
+
+6. What is the role of the Pairwise Master Key (PMK) in the 4-way handshake?
+The PMK is a shared secret key used during the 4-way handshake to create temporary encryption keys. These keys protect the communication between the device and the access point, ensuring secure data transmission.
+
+7. How does the 4-way handshake ensure mutual authentication between the client and the access point?
+During the 4-way handshake, both the client and access point prove they have the same secret (PMK) without actually sending it. If either side fails to prove it correctly, the connection fails. This ensures that both sides are real and trusted.
+
+8. What will happen if we put a wrong passphrase during a 4-way handshake?
+If the wrong passphrase is entered, the 4-way handshake will fail because the client and access point will not be able to derive matching keys. As a result, the client will not be able to join the network.
+
+9. What problem does 802.1X solve in a network?
+802.1X solves the problem of controlling who can access a network. It provides a secure way to authenticate users or devices before they are allowed onto a wired or wireless network, using methods like usernames, passwords, or certificates.
+
+10. How does 802.1X enhance security over wireless networks?
+802.1X enhances wireless security by using strong authentication methods and dynamic key generation. It makes it very hard for unauthorized users to join the network and protects against attacks like man-in-the-middle and eavesdropping.

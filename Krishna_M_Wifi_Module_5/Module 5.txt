@@ -1,0 +1,32 @@
+Module 5 Assignment - WiFi
+By Krishna, Mepco Schlenk Engineering College.
+
+1. What are the key features of Wi-Fi 6, 6E and 7 and how do they differ from previous standards like Wi-Fi 5 (802.11ac)?
+Wi-Fi 6, 6E, and 7 bring faster speeds, better efficiency, and lower latency compared to Wi-Fi 5. Wi-Fi 6 introduced OFDMA, MU-MIMO improvements, and better performance in crowded areas. Wi-Fi 6E expanded Wi-Fi 6 into the 6 GHz band for more space and less interference. Wi-Fi 7 adds even faster speeds, multi-link operation, and better handling of multiple channels at once.
+
+2. Explain the role of OFDMA in Wi-Fi 6 and how it improves network efficiency.
+OFDMA (Orthogonal Frequency Division Multiple Access) allows Wi-Fi 6 to divide a channel into smaller sub-channels. This means multiple devices can send and receive data at the same time, instead of waiting for their turn. It improves network efficiency, reduces delay, and helps in environments where many devices are connected.
+
+3. Discuss the benefits of Target Wake Time (TWT) in Wi-Fi 6 for IoT devices.
+Target Wake Time (TWT) allows devices to agree when they will wake up and communicate with the network. This means IoT devices can sleep longer and only wake when needed, saving a lot of battery power. It also reduces network congestion because fewer devices are active at the same time.
+
+4. Explain the significance of the 6 GHz frequency band in Wi-Fi 6E.
+The 6 GHz band in Wi-Fi 6E provides a lot of new channels that are free from older devices' interference. This means faster speeds, lower latency, and better performance, especially in crowded places. It also supports wider channels, like 160 MHz, which increases the data rates for users.
+
+5. Compare and contrast Wi-Fi 6 and Wi-Fi 6E in terms of range, bandwidth, and interference.
+Wi-Fi 6 and Wi-Fi 6E both use the same technology, but Wi-Fi 6E uses the 6 GHz band. Wi-Fi 6 has better range because 2.4 GHz and 5 GHz signals travel farther. Wi-Fi 6E has more bandwidth and less interference but shorter range because higher frequency signals do not travel as far or through walls easily.
+
+6. What are the major innovations introduced in Wi-Fi 7 (802.11be)?
+Wi-Fi 7 brings faster speeds with wider 320 MHz channels, Multi-Link Operation (MLO), and improved efficiency. It supports higher data rates using 4096-QAM and better manages connections over multiple bands. These changes help achieve low latency and more reliable connections, especially important for gaming, VR, and video streaming.
+
+7. Explain the concept of Multi-Link Operation (MLO) and its impact on throughput and latency.
+Multi-Link Operation (MLO) allows a device to use multiple links at the same time across different bands like 5 GHz and 6 GHz. This improves throughput because more data can flow at once. It also reduces latency since if one link is busy, data can be quickly switched to another link, keeping communication smooth.
+
+8. What is the purpose of 802.11k and v, and how does it aid in roaming?
+802.11k helps devices find the best nearby access point faster by giving them information about neighboring networks. 802.11v helps devices decide when and where to roam by suggesting better access points. Together, they make roaming quicker and smoother without dropping connections.
+
+9. Explain the concept of Fast BSS Transition (802.11r) and its benefit in mobile environments.
+Fast BSS Transition (802.11r) allows a device to roam from one access point to another without needing full reauthentication. It reduces handoff time, making roaming almost seamless. This is very helpful for mobile environments like hospitals, offices, or while using VoIP calls or online games.
+
+10. How do 802.11k/v/r work together to provide seamless roaming in enterprise networks?
+802.11k, 802.11v, and 802.11r work together to make roaming smooth. 802.11k gives a map of nearby access points, 802.11v guides the device to a better access point, and 802.11r speeds up the actual handover process. Together, they help users move around without losing connection, which is important in enterprise networks.
