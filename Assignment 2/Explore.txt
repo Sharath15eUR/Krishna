@@ -1,0 +1,23 @@
+Child Process - fork():
+
+fork() is a system call in Linux/Unix used to create a new child process. After calling fork(), both the parent and child processes run independently. The child process gets a return value of 0, while the parent receives the child’s process ID (PID). It allows parallel execution of tasks within different processes.
+
+
+Handling Common Signals:
+
+Signals are asynchronous notifications sent to a process to trigger predefined behavior. Common signals include SIGINT (Ctrl+C), SIGTERM (termination request), and SIGSEGV (segmentation fault). Processes can handle signals using the signal() or sigaction() functions to avoid unexpected termination or perform cleanup before exiting.
+
+
+Exploring Kernel Crashes:
+
+Kernel crashes occur due to critical faults like null pointer dereferences, invalid memory access, or race conditions in the kernel space. These lead to a kernel panic, halting the system. Developers use tools like dmesg, crash dumps, and kernel logs to debug and trace the root cause of these crashes.
+
+
+Time Complexity:
+
+Time complexity describes how the execution time of an algorithm scales with input size. It helps compare algorithm efficiency. Common notations include O(1) for constant time, O(n) for linear time, and O(n^2) for quadratic time. Understanding time complexity is key for writing scalable programs.
+
+
+Locking Mechanism – Mutex vs Spinlock
+
+Mutexes are locking mechanisms that block a thread until the lock is available, making them suitable for longer critical sections in user space. Spinlocks, on the other hand, keep checking in a loop (busy-waiting) until they acquire the lock. Spinlocks are used in short, fast operations, mostly in kernel space or low-latency environments.
